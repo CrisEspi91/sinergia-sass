@@ -1,0 +1,160 @@
+@import "textos";
+@import "colors";
+$tamanioLogo:200px;
+$fuenteParallax:30px;
+$fuenteTitulo:20px;
+$fuenteP:18px;
+$tamanioImagenes:300px;
+$quitaPadding:0 0;
+$center:center;
+$tamanioLogos:50px;
+$auto:auto;
+$flex:flex;
+$wrap:wrap;
+$paddingBoton:5px;
+$sinPadding:0px;
+$sinMargin:0px;
+$width:100%;
+$space-between:space-between;
+$row:row;
+
+#nav {
+background-image: $verde;
+font-size:$fuenteTitulo;
+}
+	
+.quitaPadding{
+	padding: $quitaPadding;
+	}
+header{ 
+
+.nav__logo{
+	width: $tamanioLogo;
+	}
+}
+
+
+		
+.parallax{
+padding-top: 100px;
+
+	 /* The image used */
+
+  background-image: url("../assets/img/Estudio.jpg");
+
+  /* Set a specific height */
+
+  height: 250px;
+
+  /* Create the parallax scrolling effect */
+
+  background-attachment: fixed;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+}
+
+.parallax__titulo{
+	font-family: oswald;
+	text-align: center;
+	font-size: 50px;
+	color: #fff;
+	background-color: rgba(50,200,255,0.8);
+}
+
+	
+.titulo{
+	font-size: 30px;
+	text-align: center;
+	padding: 5px 0;
+	color:$white;
+	width: $width;
+}
+
+
+
+.creemos__section{
+	text-align: $center;
+	padding: 10px 50px;
+	
+}
+
+@for $img from 1 through 10 {
+	.img-#{$img}{
+	width: 50px * $img;
+	
+	}
+}
+
+
+.paraQue__section{
+	text-align: $center;
+}
+	.paraQue__iconos{
+	font-size: $tamanioLogos;
+	text-align: $center;
+	color: $verde;		
+	}		
+
+	.paraQue__P{
+	font-size: $fuenteTitulo;
+	font-family: $montserrat;
+	}
+
+.carousel__mover{
+	display: $flex;
+	flex-wrap: $wrap;
+	justify-content:$center;
+}
+
+.conoce{
+	font-family: $montserrat;
+	font-size: $fuenteTitulo;
+
+	.boton__conoce{
+		padding: $paddingBoton;
+		font-family: $montserrat;
+		background-color: $verde;
+		&:hover{
+		background-color: $mora;
+		}
+		margin: $paddingBoton;
+	}
+
+}
+
+.mision{
+	
+	.mision__lista{
+		background-color: $celeste;
+
+		.mision__li{
+			font-size: $fuenteTitulo;
+			text-align: $center;
+		}
+
+	}
+
+}
+
+
+.quitaPadding{
+	padding: $sinPadding;
+	margin: $sinMargin;
+
+}
+
+.programas{
+		display: $flex;
+		justify-content: $space-between;
+		align-items: $center;
+		.programas__img{
+		
+
+		}
+
+}
